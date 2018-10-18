@@ -5,7 +5,13 @@ const SECONDHAND = document.querySelector('#second');
 var date = new Date();
 
 console.log(date);
-alert("Welcome to see time");
+// user friendly logics
+var a = prompt("enter your name ");
+alert("Welcome "+a);
+document.getElementById("demo").innerHTML="<b>"+" Welcome "+a + "</b>";
+
+
+// end
 let hr = date.getHours();
 let min =  date.getMinutes();
 let sec = date.getSeconds();
